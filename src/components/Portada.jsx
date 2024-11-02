@@ -5,7 +5,7 @@ const Portada = () => {
   carousel();
   async function carousel() {
     var i;
-    var x = await document.getElementsByClassName("mySlides");
+    var x = await document.getElementsByClassName("mySlidesPhotos");
 
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
@@ -22,9 +22,18 @@ const Portada = () => {
       <section>
         <div id="home">
           <div className="FotosdeHome">
-            <img className="mySlides w3-animate-fading" src="img/portada/img1_recortada.JPG" />
-            <img className="mySlides w3-animate-fading" src="img/portada/img2_recortada.JPG" />
-            <img className="mySlides w3-animate-fading" src="img/portada/img3_recortada.JPG" />
+            <img
+              className="mySlidesPhotos w3-animate-fading"
+              src="img/portada/img1_recortada.JPG"
+            />
+            <img
+              className="mySlidesPhotos w3-animate-fading"
+              src="img/portada/img2_recortada.JPG"
+            />
+            <img
+              className="mySlidesPhotos w3-animate-fading"
+              src="img/portada/img3_recortada.JPG"
+            />
           </div>
         </div>
       </section>
