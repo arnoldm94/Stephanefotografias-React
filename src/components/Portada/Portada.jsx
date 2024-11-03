@@ -1,4 +1,5 @@
 import React from "react";
+import "./Portada.style.scss";
 
 const Portada = () => {
   var myIndex = 0;

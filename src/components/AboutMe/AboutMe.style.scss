@@ -1,0 +1,103 @@
+@media screen and (min-width: 1023px) {
+  /*---------------------------------------
+            About me               
+          -----------------------------------------*/
+
+  .titleaboutme {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  #aboutme {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  .aboutmeimg {
+    position: relative;
+    display: flex;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .paragraohaboutme {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    justify-content: center;
+
+    p {
+      padding-bottom: 20px;
+      font-size: 3.5vh;
+    }
+  }
+}
+@media screen and (min-width: 830px) and (max-width: 1023px) {
+  /*---------------------------------------
+            About me               
+          -----------------------------------------*/
+
+  .titleaboutme {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  #aboutme {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  .aboutmeimg {
+    position: relative;
+    display: flex;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .paragraohaboutme {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    justify-content: center;
+    max-height: 450px;
+    p {
+      padding-bottom: 8px;
+      font-size: 3vh;
+    }
+  }
+
+  .servicesbox_img:hover {
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(100%);
+  }
+}
+@media screen and (max-width: 830px) {
+  #aboutme {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .aboutmeimg {
+    position: relative;
+  }
+
+  #img_aboutme {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 400px;
+    height: auto;
+  }
+  .titleaboutme {
+    padding-top: 30px;
+  }
+  .cuadrodetextoaboutme {
+    padding-top: 10px;
+    position: absolute;
+  }
+}

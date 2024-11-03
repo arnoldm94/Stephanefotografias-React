@@ -1,20 +1,22 @@
 import React from "react";
-import NavBar from "../components/NavBar";
-import Portada from "../components/Portada";
-import AboutMe from "../components/AboutMe";
-import ServicesHome from "../components/ServicesHome";
-import Reviews from "../components/Reviews";
-import Footer from "../components/Footer";
+
+import Portada from "../components/Portada/Portada";
+import AboutMe from "../components/AboutMe/AboutMe";
+import ServicesHome from "../components/ServicesHome/ServicesHome";
+import Reviews from "../components/Reviews/Reviews";
+import Footer from "../components/Footer/Footer";
+import "../../styles/sass/homestyles.scss";
 
 const Home = () => {
   return (
     <>
-      <NavBar />
       <Portada />
-      <AboutMe />
-      <ServicesHome />
-      <Reviews />
-      <Footer />
+      <div className="homeApp">
+        <AboutMe />
+        <ServicesHome />
+        <Reviews />
+        <Footer />
+      </div>
     </>
   );
 };

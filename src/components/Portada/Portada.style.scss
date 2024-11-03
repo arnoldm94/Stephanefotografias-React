@@ -1,0 +1,36 @@
+#home {
+  display: block;
+}
+.FotosdeHome {
+  display: flex;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CSS slideshow*/
+.w3-animate-fading {
+  animation: fading 5s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.mySlides {
+  height: 100%;
+}

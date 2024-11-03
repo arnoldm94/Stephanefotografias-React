@@ -1,0 +1,25 @@
+#navbarSteph {
+  min-width: 100%;
+  display: flex;
+  z-index: 100;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+#navbarNav {
+  text-align: right;
+  justify-content: end;
+}
+#logosteph {
+  width: auto;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  #logosteph {
+    width: auto;
+    height: 70px;
+  }
+  h1 {
+    font-size: 4vh;
+  }
+}
