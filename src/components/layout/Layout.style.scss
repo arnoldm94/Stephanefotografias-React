@@ -1,0 +1,86 @@
+#root {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #084430aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61fba4aa);
+}
+
+@font-face {
+  font-family: fuenteStephie;
+  src: url(../styles/font/._Spectral-Italic.ttf);
+}
+/* Reset CSS */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: fuenteStephie;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* Color Theme Swatches in Hex */
+.verde-azul-oscuro-1-hex {
+  color: #679e91;
+}
+.verde-azul-oscuro-2-hex {
+  color: #335c54;
+}
+.verde-azul-oscuro-3-hex {
+  color: #0a2913;
+}
+.verde-azul-oscuro-4-hex {
+  color: #3c6330;
+}
+.verde-azul-oscuro-5-hex {
+  color: #5e8a67;
+}
+
+:root {
+  --white-color: rgba(255, 255, 255, 0.822);
+  --primary-color: #0a2913;
+  --secondary-color: #335c54;
+  --section-bg-color: #5e8a67;
+  --custom-btn-bg-color: grey;
+  --custom-btn-bg-hover-color: #0a2913;
+  --dark-color: #000000;
+  --p-color: rgba(255, 255, 255, 0.822);
+  --border-color: #679e91;
+  --link-hover-color: rgba(238, 232, 232, 0);
+}

@@ -3,23 +3,15 @@ import stephanefotografiaslogo from "../../assets/logostephanefotografias.svg";
 import "./NavBar.style.scss";
 
 const NavBar = () => {
-  window.onscroll = changePos;
-
-  function changePos() {
-    var header = document.getElementById("navbarSteph");
-    if (window.scrollY > 70) {
-      header.style.position = "fixed";
-      header.style.top = "0";
-    } else {
-      header.style.position = "";
-      header.style.top = "";
-    }
-  }
+  window.onscroll = function () {
+    console.log("Vertical: " + window.scrollY);
+    console.log("Horizontal: " + window.scrollX);
+  };
   return (
     <>
       <nav id="navbarSteph" className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="./index.html">
             <img
               src={stephanefotografiaslogo}
               className="logo react d-inline-flex p-2"

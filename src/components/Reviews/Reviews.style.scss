@@ -1,0 +1,125 @@
+.reviews-section {
+  padding-top: 50px;
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background-color: grey;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-container {
+  padding: 10px 40px;
+  padding-top: 0;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: grey;
+  border: 5px solid rgba(128, 128, 128, 0.714);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-container-left {
+  left: 0;
+}
+
+.timeline-container-right {
+  left: 50%;
+}
+
+.timeline-container-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 9px;
+  width: 0;
+  z-index: 1;
+  right: 25px;
+  border: medium solid grey;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent rgb(221, 218, 218);
+}
+
+.timeline-container-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 9px;
+  width: 0;
+  z-index: 1;
+  left: 25px;
+  border: medium solid rgb(202, 195, 195);
+  border-width: 20px 20px 20px 0;
+  border-color: transparent rgb(216, 215, 215) transparent transparent;
+}
+
+.timeline-container-right::after {
+  left: -13px;
+}
+
+.timeline-content {
+  padding: 5px;
+  background-color: rgba(240, 240, 240, 0.936);
+  position: relative;
+  border-radius: var(--border-radius-medium);
+  transition: all 0.5s ease-in-out;
+}
+.timeline-content:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.95);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-container::before {
+    left: 58px;
+    border: medium solid beige;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent beige transparent transparent;
+  }
+
+  .timeline-container-left::after,
+  .timeline-container-right::after {
+    left: 6px;
+  }
+
+  .timeline-container-right {
+    left: 0%;
+  }
+}
+
+#reviews {
+  flex-direction: column;
+}

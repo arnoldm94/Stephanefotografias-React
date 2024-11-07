@@ -1,14 +1,7 @@
 import React from "react";
+import "./Reviews.style.scss";
 
 const Reviews = () => {
-  const linktogooglereviews = (e) => {
-    window.open(
-      (location.href =
-        "https://www.google.es/maps/place/Stephane+Fotograf%C3%ADa/@43.3251545,-2.9859631,17z/data=!4m8!3m7!1s0xd4e5b42538ba275:0x2144770ca517170e!8m2!3d43.3251506!4d-2.9833882!9m1!1b1!16s%2Fg%2F11y1fbmxr4?hl=es&entry=ttu"),
-      "_blank"
-    );
-  };
-
   return (
     <>
       <section className="reviews-section section-padding section-bg" id="section_4">
@@ -21,11 +14,7 @@ const Reviews = () => {
             </div>
 
             <div className="timeline">
-              <div
-                id="review1"
-                className="timeline-container timeline-container-left"
-                onClick={linktogooglereviews}
-              >
+              <div id="review1" className="timeline-container timeline-container-left">
                 <div className="timeline-content">
                   <div className="reviews-block">
                     <div
@@ -71,11 +60,7 @@ const Reviews = () => {
                 </div>
               </div>
 
-              <div
-                id="review2"
-                className="timeline-container timeline-container-right"
-                onClick={linktogooglereviews}
-              >
+              <div id="review2" className="timeline-container timeline-container-right">
                 <div className="timeline-content">
                   <div className="reviews-block">
                     <div
@@ -119,11 +104,7 @@ const Reviews = () => {
                 </div>
               </div>
 
-              <div
-                id="review3"
-                className="timeline-container timeline-container-left"
-                onClick={linktogooglereviews}
-              >
+              <div id="review3" className="timeline-container timeline-container-left">
                 <div className="timeline-content">
                   <div className="reviews-block">
                     <div
