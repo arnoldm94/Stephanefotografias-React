@@ -4,8 +4,17 @@ import "./NavBar.style.scss";
 
 const NavBar = () => {
   window.onscroll = function () {
-    console.log("Vertical: " + window.scrollY);
-    console.log("Horizontal: " + window.scrollX);
+    let navbarchange = document.getElementById("navbarSteph");
+    let navbarlogo = document.getElementById("logosteph");
+    if (window.scrollY > 70) {
+      navbarchange.style.position = "fixed";
+      navbarlogo.style.height = 2;
+      navbarchange.classList.add("smaller");
+    } else {
+      navbarchange.classList.remove("smaller");
+      navbarlogo.style.height = 5;
+      navbarchange.style.position = "relative";
+    }
   };
   return (
     <>
@@ -14,7 +23,7 @@ const NavBar = () => {
           <a className="navbar-brand" href="./index.html">
             <img
               src={stephanefotografiaslogo}
-              className="logo react d-inline-flex p-2"
+              className="logo react d-inline-flex"
               alt="logo de Stephanefotografias"
               id="logosteph"
             />
