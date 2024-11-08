@@ -33,7 +33,7 @@ const AboutMe = () => {
                 continuar con mis proyectos.
               </p>
               <br />
-              <p>
+              {/* <p>
                 En 2023 me inscribí a un curso de “Visual Merchandising” para estimular mi
                 creatividad. Ha sido una sorpresa, pero de las buenas, porque me dio la oportunidad
                 de pensar de nuevo en mi proyecto inicial de trabajar con fotografía. Escribí un
@@ -43,12 +43,7 @@ const AboutMe = () => {
                 estos momentos. Conforme los clientes llegaban empece a plantearme tener un estudio
                 para poder atenderles mejor, ser más profesional.
               </p>
-              <br />
-              <p>
-                Quiero estar involucrada en la parte de creación de piezas de marketing de todo
-                tipo. A parte de eso, también me gusta hacer videos documentales contando historias
-                de personas o acontecimientos importantes, de exposiciones.
-              </p>
+              <br /> */}
             </h5>
           </div>
         </div>

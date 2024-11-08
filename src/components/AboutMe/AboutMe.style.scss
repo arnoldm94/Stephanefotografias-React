@@ -6,7 +6,11 @@
   .titleaboutme {
     padding-top: 25px;
     padding-bottom: 15px;
+    h1 {
+      font-size: 6em;
+    }
   }
+
   #aboutme {
     display: flex;
     justify-content: space-between;
@@ -22,7 +26,8 @@
   }
 
   .paragraohaboutme {
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -31,7 +36,7 @@
 
     p {
       padding-bottom: 20px;
-      font-size: 3.5vh;
+      font-size: 4vh;
     }
   }
 }

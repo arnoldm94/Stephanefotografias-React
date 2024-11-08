@@ -1,44 +1,82 @@
 #Footer {
-  position: absolute;
-  padding: 3%;
-
-  padding-bottom: 0px;
-  padding-top: 0px;
+  position: relative;
+  background-color: #f8f9fa;
+  margin-top: 45px;
+  padding: 5px;
+  color: rgba(70, 69, 69, 0.979);
 }
 
-.site-footer {
-  /*   background-color: var(--primary-color); */
-  margin-top: 150px;
-
-  position: absolute;
+//624 y 924
+@media screen and (min-width: 1000px) {
+  .containerfooter {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 1.6fr;
+  }
+  .dondeencontrarme {
+    padding-top: 50px;
+  }
+  .horario {
+    padding-top: 50px;
+  }
+  .contacto {
+    padding-top: 50px;
+  }
+  #footergallery {
+    padding: 20px;
+    width: 100%;
+  }
 }
 
-.site-footer strong {
-  color: grey;
-  /*  color: var(--white-color); */
+@media screen and (max-width: 1000px) {
+  .containerfooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dondeencontrarme {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .horario {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .contacto {
+    padding-top: 20px;
+    width: 100%;
+  }
+  #footergallery {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .copyright {
+    text-align: center;
+    padding-top: 10px;
+  }
 }
 
-.site-footer p,
+em {
+  color: black;
+}
 .site-footer-link {
-  /*  color: rgba(255, 255, 255, 0.75); */
-  color: grey;
+  color: rgb(46, 46, 46);
   font-size: var(--btn-font-size);
   transition: all 0.3s;
   text-decoration: none;
+  margin-left: 2px;
 }
 
 .site-footer-link:hover {
-  /*   color: rgba(255, 255, 255, 0.75); */
   text-decoration: underline;
 }
 
 .copyright-text {
-  color: rgba(255, 255, 255, 0.75);
   font-size: var(--menu-font-size);
 }
 
 .copyright-text a {
-  color: rgba(128, 128, 128, 0.764);
+  color: grey;
 }
 
 #footergallery {
@@ -46,7 +84,7 @@
   flex-direction: column;
 }
 #footergallery img {
-  width: 150px;
+  width: 130px;
   height: auto;
   object-fit: cover;
   padding-right: 5px;
@@ -85,4 +123,7 @@
 
 .social-icon-link span {
   display: block;
+}
+.copyright {
+  text-align: left;
 }

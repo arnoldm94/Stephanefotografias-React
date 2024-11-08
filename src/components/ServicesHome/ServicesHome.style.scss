@@ -1,7 +1,7 @@
 #services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .servicesbox_img {
   max-width: 320px;
@@ -21,7 +21,7 @@
 .servicesbox {
   text-align: center;
 
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1244px) {
@@ -34,7 +34,7 @@
   #services {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .servicesbox_img {
     filter: revert;
@@ -44,7 +44,7 @@
   #services {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .servicesbox_img {
     max-width: 400px;

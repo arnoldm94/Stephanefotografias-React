@@ -1,6 +1,7 @@
 import React from "react";
 import stephanefotografiaslogo from "../../assets/logostephanefotografias.svg";
 import "./NavBar.style.scss";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   window.onscroll = function () {
@@ -46,29 +47,30 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item pe-3">
-                <a id="homeclick" className="nav-link active" aria-current="page" href="#">
+                <Link to="/" id="homeclick" className="nav-link active" aria-current="page">
                   Home
-                </a>
+                </Link>
               </li>
+
               <li className="nav-item pe-3">
                 <a id="aboutmeclick" className="nav-link" href="#aboutmesection">
                   About Me
                 </a>
               </li>
               <li className="nav-item pe-3">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/services">
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item pe-3">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/gallery">
                   Gallery
-                </a>
+                </Link>
               </li>
               <li className="nav-item pe-3">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
