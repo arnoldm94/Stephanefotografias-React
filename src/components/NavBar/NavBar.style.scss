@@ -4,7 +4,11 @@
 
   will-change: filter;
   transition: filter 300ms;
+  transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: linear;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #084430aa);
 }
@@ -17,10 +21,16 @@
   display: flex;
   position: relative;
   z-index: 100;
+  transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: linear;
 }
 #navbarNav {
   text-align: right;
   justify-content: end;
+  transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: linear;
 }
 
 @media screen and (max-width: 900px) {
@@ -37,15 +47,15 @@
   /* para hacer el NAVBAR pequeño */
 
   .smaller {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 6vw;
+    width: auto;
     position: fixed;
+    font-size: small;
   }
   .smallerlogo {
-    padding-top: 1px;
-    padding-bottom: 1px;
     height: 70px;
-    position: fixed;
+    padding-bottom: 2px;
   }
 }

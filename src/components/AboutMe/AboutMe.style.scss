@@ -16,8 +16,9 @@
   .aboutmeimg {
     position: relative;
     display: flex;
-    max-width: 400px;
-    height: auto;
+
+    height: 40vw;
+    aspect-ratio: 40/63;
   }
 
   .paragraohaboutme {
@@ -33,6 +34,10 @@
       font-size: 3.5vh;
     }
   }
+}
+
+#img_aboutme {
+  aspect-ratio: 40/63;
 }
 @media screen and (min-width: 830px) and (max-width: 1023px) {
   /*---------------------------------------
@@ -69,11 +74,6 @@
       font-size: 3vh;
     }
   }
-
-  .servicesbox_img:hover {
-    transition: all 0.5s ease-in-out;
-    filter: grayscale(100%);
-  }
 }
 @media screen and (max-width: 830px) {
   #aboutme {
@@ -98,7 +98,7 @@
   }
   .cuadrodetextoaboutme {
     padding-top: 10px;
-    position: absolute;
+    position: relative;
   }
 }
 #aboutmesection {

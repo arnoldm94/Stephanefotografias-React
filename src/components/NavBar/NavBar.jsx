@@ -7,12 +7,12 @@ const NavBar = () => {
     let navbarchange = document.getElementById("navbarSteph");
     let navbarlogo = document.getElementById("logosteph");
     if (window.scrollY > 70) {
-      navbarchange.style.position = "fixed";
-      navbarlogo.style.height = 2;
+      navbarlogo.classList.add("smallerlogo");
       navbarchange.classList.add("smaller");
+      navbarchange.style.position = "fixed";
     } else {
+      navbarlogo.classList.remove("smallerlogo");
       navbarchange.classList.remove("smaller");
-      navbarlogo.style.height = 5;
       navbarchange.style.position = "relative";
     }
   };
@@ -46,32 +46,27 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item pe-3">
-                <a
-                  id="homeclick"
-                  className="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                >
+                <a id="homeclick" className="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
               </li>
               <li className="nav-item pe-3">
-                <a id="aboutmeclick" className="nav-link" href="./index.html#titleaboutme">
+                <a id="aboutmeclick" className="nav-link" href="#aboutmesection">
                   About Me
                 </a>
               </li>
               <li className="nav-item pe-3">
-                <a className="nav-link" href="./pages/services.html">
+                <a className="nav-link" href="#">
                   Services
                 </a>
               </li>
               <li className="nav-item pe-3">
-                <a className="nav-link" href="./pages/gallery.html">
+                <a className="nav-link" href="#">
                   Gallery
                 </a>
               </li>
               <li className="nav-item pe-3">
-                <a className="nav-link" href="./pages/contact.html">
+                <a className="nav-link" href="#">
                   Contact
                 </a>
               </li>
